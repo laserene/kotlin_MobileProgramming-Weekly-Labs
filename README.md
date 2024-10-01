@@ -1,1 +1,1 @@
-# kotlin_MobileProgramming-Weekly-Labs
+IT4785 Mobile Programming Labs
