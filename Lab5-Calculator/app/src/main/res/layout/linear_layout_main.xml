@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -31,10 +32,10 @@
         android:textSize="80sp" />
 
     <!-- Buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="8sp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -42,34 +43,38 @@
             android:layout_height="wrap_content">
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="CE"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="C"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="BS"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="/"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
         </LinearLayout>
@@ -79,34 +84,38 @@
             android:layout_height="wrap_content">
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="7"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="8"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="9"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="x"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
         </LinearLayout>
@@ -116,34 +125,38 @@
             android:layout_height="wrap_content">
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="4"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="5"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="6"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="-"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
         </LinearLayout>
@@ -153,34 +166,38 @@
             android:layout_height="wrap_content">
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="1"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="2"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="3"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="+"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
         </LinearLayout>
@@ -190,34 +207,38 @@
             android:layout_height="wrap_content">
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="+/-"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="0"
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#efefef" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="."
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
 
             <Button
-                style="@style/FunctionalButtonStyle"
+                style="@style/CalculatorButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80sp"
                 android:text="="
+                android:layout_margin="4sp"
                 android:textColorLink="#ff6750a4"
                 app:backgroundTint="#DEDEDE" />
         </LinearLayout>
