@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Text: LifeCycle -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="#222222"
+        android:padding="16dp" />
+
+    <!-- Text: 0 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:background="#e1e1e1"
+        android:gravity="end"
+        android:paddingLeft="10sp"
+        android:paddingTop="24sp"
+        android:paddingRight="10sp"
+        android:paddingBottom="24sp"
+        android:text="@string/calculator_field"
+        android:textColor="#000000"
+        android:textSize="80sp" />
+
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CE"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BS"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+/-"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#efefef" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+
+            <Button
+                style="@style/FunctionalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textColorLink="#ff6750a4"
+                app:backgroundTint="#DEDEDE" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
