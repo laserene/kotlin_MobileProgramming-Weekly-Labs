@@ -91,17 +91,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    private fun addDigit(digit: Int) {
+        if (step == 0) {
+            op1 = op1 * 10 + digit
+            textResult.text = "$op1"
+        } else if (step == 1) {
+            op2 = op2 * 10 + digit
+            textResult.text = "$op2"
+        }
+    }
+
     private fun resetVars() {
         step = 0
         op1 = 0
         op2 = 0
-    }
-
-    private fun addDigit(digit: Int) {
-        if (step == 0) {
-            op1 = op1 * 10 + digit
-        } else if (step == 1) {
-            op2 = op2 * 10 + digit
-        }
     }
 }
