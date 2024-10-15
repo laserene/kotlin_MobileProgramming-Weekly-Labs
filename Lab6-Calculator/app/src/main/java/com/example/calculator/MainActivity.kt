@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var textResult: TextView
 
     private var step = 0
+    private var opBtnClicked = 0
+    private var ERR_DIV_ZERO = 0
     private var op: Int = 0
     private var op1: Int = 0
     private var op2: Int = 0
@@ -62,28 +64,48 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 step += 1
 
                 when (id) {
-                    R.id.btnAdd -> op = 1
-                    R.id.btnMinus -> op = 2
-                    R.id.btnMul -> op = 3
-                    R.id.btnDiv -> op = 4
-                    R.id.btnEqual -> {
-                        var result = 0
-                        when (op) {
-                            1 -> result = op1 + op2
-                            2 -> result = op1 - op2
-                            3 -> result = op1 * op2
-                            4 -> {
-                                result = if (op2 == 0) {
-                                    textResult.text = "Cannot divide 0"
-                                    resetVars()
-                                    return
+                    R.id.btnAdd -> {
+                        opBtnClicked += 1
+
+                        if (opBtnClicked >= 2) {
+                            if (op == 1) {
+                                op1 += op2
+                            } else if (op == 2) {
+                                op1 -= op2
+                            } else if (op == 3) {
+                                op1 *= op2
+                            } else {
+                                if (op2 == 0) {
+                                    textResult.text = "Cannot divide zero"
                                 } else {
-                                    op1 / op2
+                                    op1 /= op2
                                 }
                             }
                         }
 
-                        textResult.text = "$result"
+                        op = 1
+                    }
+                    R.id.btnMinus -> {
+                        opBtnClicked += 1
+                        op = 2
+                    }
+                    R.id.btnMul -> {
+                        opBtnClicked += 1
+                        op = 3
+                    }
+                    R.id.btnDiv -> {
+                        opBtnClicked += 1
+                        op = 4
+                    }
+                    R.id.btnEqual -> {
+                        val result = calculate()
+
+                        if (ERR_DIV_ZERO == 1) {
+                            textResult.text = "Cannot divide zero."
+                        } else {
+                            textResult.text = "$result"
+                        }
+
                         resetVars()
                     }
                 }
@@ -99,6 +121,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             op2 = op2 * 10 + digit
             textResult.text = "$op2"
         }
+    }
+
+    private fun calculate(): Float {
+        var result = 0.0f
+        when (op) {
+            1 -> result = op1 + op2.toFloat()
+            2 -> result = op1 - op2.toFloat()
+            3 -> result = op1 * op2.toFloat()
+            4 -> {
+                if (op2 == 0) {
+                    ERR_DIV_ZERO = 1
+                } else {
+                    result = op1 / op2.toFloat()
+                }
+            }
+        }
+        return result
     }
 
     private fun resetVars() {
