@@ -57,11 +57,11 @@ class MainActivity : AppCompatActivity() {
     listView.adapter = adapter
     registerForContextMenu(listView)
 
-    studentList.add("Nguyễn Huy Tuấn - 001")
-    studentList.add("Đỗ Thùy Dương - 002")
-    studentList.add("Lê Quang Minh - 003")
-    studentList.add("Mai Việt Dũng - 004")
-    studentList.add("Lê Cao Phong - 005")
+    studentList.add("Nguyễn Cao Kỳ - 001")
+    studentList.add("Đỗ Quốc Bảo - 002")
+    studentList.add("Hán Thế Chiến - 003")
+    studentList.add("Phạm Đức Lưu - 004")
+    studentList.add("Trần Trọng Hoàng - 005")
 
     listView.setOnItemClickListener { _, _, position, _ ->
       Log.d("MainActivity", "ListView item clicked at position $position")
