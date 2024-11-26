@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         // Create sample email data
         val emailList = listOf(
             Email("Nguyen Cao Ky", "20215072", "Reminder: Submit assignment before 23:59PM 29 Oct, 2024", "23:48 PM"),
+
             Email("John Smith", "Team Meeting", "The team meeting has been scheduled for Thursday at 10 AM. Please let me know if you have any conflicts.", "09:30 AM"),
 
                     Email("Karen Lee", "Budget Approval", "The budget proposal has been approved, and funds will be released by end of the month.", "11:15 AM"),
